@@ -9,6 +9,7 @@
 html {
   /* use percentage that computes to 10px unless user changes font size. 10 divdied by 16 =  0.625 */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   box-sizing: border-box;
