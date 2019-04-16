@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* force inheritance on all elements */
+  box-sizing: inherit;
+}
+html {
+  /* use percentage that computes to 10px unless user changes font size. 10 divdied by 16 =  0.625 */
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
