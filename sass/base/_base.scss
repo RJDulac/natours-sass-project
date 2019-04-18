@@ -8,9 +8,25 @@
 }
 html {
   /* use percentage that computes to 10px unless user changes font size. 10 divdied by 16 =  0.625 */
-  font-size: 62.5%;
+  font-size: 62.5%; //1 rem = 10px
   scroll-behavior: smooth;
+  //phone is the same as tab-port
+  //put larger first
+  @include respond(tab-land) {
+    font-size: 56.25%; //1 rem = 9px 9/16 = 56.25%
+  }
+  @include respond(tab-port) {
+    font-size: 50%; //1 rem = 8px 8/16 = 50%
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; //1 rem = 12px 12/16 = 75%
+  }
 }
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
