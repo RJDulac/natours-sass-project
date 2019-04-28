@@ -308,10 +308,18 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img
+              <!-- <img
                 src="img/nat-8.jpg"
                 alt="Person on a tour"
                 class="story__image"
+              /> -->
+              <!-- Chrome tools too buggy to test. Need to find other tools -->
+              <img
+                srcset="img/nat-8-small.jpg 1200w, img/nat-8.jpg 2000w"
+                sizes="(max-width: 56.25em) 56vw, (max-width: 37.5em) 76vw, 18.75em"
+                alt="Person on a tour"
+                class="story__image"
+                src="img/nat-8.jpg"
               />
               <figcaption class="story__caption">
                 Mary Smith
