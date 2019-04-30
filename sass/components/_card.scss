@@ -17,7 +17,10 @@
     left: 0;
     width: 100%;
     //hide the back of element
+    //need webkit for safari
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
     border-radius: 3px;
     //image overlaps radius so we hide the overflow
     overflow: hidden;
