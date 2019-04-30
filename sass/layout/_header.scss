@@ -22,9 +22,10 @@
 
   //192dpi is the size of apple retina screen
   //comma acts like an or operator
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),
-    //safari doesn't have min-resolution (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-    (min-width: 125em) {
+  //safari doesn't have min-resolution
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
